@@ -56,7 +56,7 @@ keymap("v", "p", '"_dP', opts)
 -- Insert --
 -- Press jk fast to escape
 keymap("i", "jk", "<ESC>", opts)
-keymap("i", "jk", "<ESC>", opts)
+keymap("i", "kj", "<ESC>", opts)
 
 -- Visual --
 -- Stay in indent mode
