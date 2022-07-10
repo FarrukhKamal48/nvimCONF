@@ -122,11 +122,11 @@ First Enter:
 
 and press `i` on the Language Server you wish to install
 
-Next you will need to add the server to this list: [servers](https://github.com/uneeb125/myneovim/blob/main/lua/user/lsp/lsp-installer.lua#L6)
+Next you will need to add the server to this list: [servers](https://github.com/FarrukhKamal48/nvimCONF/blob/main/lua/user/lsp/lsp-installer.lua#L6)
 
 ### Formatters and linters
 
-Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/LunarVim/nvim-basic-ide/blob/8b9ec3bffe8c8577042baf07c75408532a733fea/lua/user/lsp/null-ls.lua#L13)
+Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/FarrukhKamal48/nvimCONF/blob/main/lua/user/lsp/null-ls.lua#L12)
 
 **NOTE** Some are already setup as examples, remove them if you want
 
