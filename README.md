@@ -132,4 +132,4 @@ Make sure the formatter or linter is installed and add it to this setup function
 
 ### Plugins
 
-You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-basic-ide/blob/8b9ec3bffe8c8577042baf07c75408532a733fea/lua/user/plugins.lua#L42)
+You can install new plugins here: [plugins](https://github.com/FarrukhKamal48/nvimCONF/blob/main/lua/user/plugins.lua#L42)
