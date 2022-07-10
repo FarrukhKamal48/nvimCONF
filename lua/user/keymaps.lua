@@ -22,6 +22,21 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- Change key map for cycling search term
+keymap("n", "b", "n", opts)
+
+-- -- Change key map for mark
+-- keymap("n", "`", "m", opts)
+-- keymap("n", "~", "'", opts)
+
+-- Move to START and END of LINE
+keymap("n", "n", "0", opts)
+keymap("n", "m", "$", opts)
+
+-- Move to TOP and BOTTOM of FILE
+keymap("n", "<S-n>", "<S-g>", opts)
+keymap("n", "<S-m>", "gg", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
