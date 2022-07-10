@@ -3,7 +3,7 @@
 
 This repo is supposed to be my backup for the current neovim config i have. This config is stricktly for me and the following steps are made for me so that i can ensure my config does not break when i try to clone it from here to my local machine.
 
-This repo is just my personalized version of [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide) by ChristianChiarulli. 
+This repo is just my personalized version of [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide), by ChristianChiarulli (awesome guy by the way). 
 
 # How to install?
 If for some reason i lose my config, i can clone it from here.
