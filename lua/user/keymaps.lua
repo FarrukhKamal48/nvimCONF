@@ -34,8 +34,8 @@ keymap("n", "n", "0", opts)
 keymap("n", "m", "$", opts)
 
 -- Move to TOP and BOTTOM of FILE
-keymap("n", "<S-n>", "<S-g>", opts)
-keymap("n", "<S-m>", "gg", opts)
+keymap("n", "<S-n>", "gg", opts)
+keymap("n", "<S-m>", "<S-g>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
