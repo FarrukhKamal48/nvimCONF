@@ -47,6 +47,10 @@ keymap("n", "<S-n>", "gg", opts)
 keymap("n", "<S-m>", "<S-g>", opts)
 
 
+-- Select EveryThing in normal_mode
+-- keymap("n", "<C-A>", "VggG", opts)  -- does'nt work
+
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -96,6 +100,16 @@ keymap("i", "kj", "<ESC>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+-- Move to START and END of LINE
+keymap("v", "n", "0", opts)
+keymap("v", "m", "$", opts)
+
+-- Move to TOP and BOTTOM of FILE
+keymap("v", "<S-n>", "gg", opts)
+keymap("v", "<S-m>", "<S-g>", opts)
+
+-- Select EveryThing in visual_mode
+keymap("v", "<C-A>", "ggG", opts)   -- does'nt work
 
 -- Plugins --
 
