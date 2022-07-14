@@ -27,16 +27,17 @@ local diff = {
 local filetype = {
 	"filetype",
 	icons_enabled = true,
+    padding = 2,
 }
 
 local location = {
 	"location",
-	padding = 0,
+	padding = 0.5,
 }
 
-local spaces = function()
-	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
-end
+-- local spaces = function()
+-- 	return "spaces: " .. vim.api.nvim_buf_get_option(0, "shiftwidth")
+-- end
 
 lualine.setup({
 	options = {
@@ -54,6 +55,6 @@ lualine.setup({
 		lualine_c = { diagnostics },
 		lualine_x = { diff },
 		lualine_y = { filetype },
-		lualine_z = { location },
+		lualine_z = { location, "progress" },
 	},
 })

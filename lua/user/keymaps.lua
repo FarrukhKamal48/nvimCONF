@@ -48,7 +48,7 @@ keymap("n", "<S-m>", "<S-g>", opts)
 
 
 -- Select EveryThing in normal_mode
--- keymap("n", "<C-A>", "VggG", opts)  -- does'nt work
+keymap("n", "<C-A>", "ggVG", opts)  -- does'nt work
 
 
 -- Resize with arrows
@@ -109,7 +109,7 @@ keymap("v", "<S-n>", "gg", opts)
 keymap("v", "<S-m>", "<S-g>", opts)
 
 -- Select EveryThing in visual_mode
-keymap("v", "<C-A>", "ggG", opts)   -- does'nt work
+keymap("v", "<C-A>", "<ESC>ggVG", opts)   -- does'nt work
 
 -- Plugins --
 
