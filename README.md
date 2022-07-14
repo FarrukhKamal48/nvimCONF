@@ -1,5 +1,5 @@
 # myneovim
-> What is this repo?
+> Why is this repo?
 
 This repo is supposed to be my backup for the current neovim config i have. This config is stricktly for me and the following steps are made for me so that i can ensure my config does not break when i try to clone it from here to my local machine.
 

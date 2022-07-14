@@ -1,11 +1,16 @@
-local colorscheme = "onedark"
+local theme = "onedark" -- choose theme name, does not have to be exact
 
-if colorscheme == "onedark" then
+local colorscheme = "onedark" -- actual variable for theme, must be exact
+
+if theme == "onedark" then
 	require("user.themes.onedarkTheme")
-elseif colorscheme == "tokyonight" then
+	colorscheme = "onedark"
+elseif theme == "tokyonight" then
 	require("user.themes.tokyonight")
-elseif colorscheme == "darkplus" then
+	colorscheme = "tokyonight"
+elseif theme == "darkplus" then
 	require("user.themes.darkplus")
+	colorscheme = "darkplus"
 end
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

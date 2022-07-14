@@ -27,12 +27,12 @@ local diff = {
 local filetype = {
 	"filetype",
 	icons_enabled = true,
-    padding = 2,
+    padding = 0,
 }
 
 local location = {
 	"location",
-	padding = 0.5,
+	padding = 1,
 }
 
 -- local spaces = function()
@@ -54,7 +54,7 @@ lualine.setup({
 		lualine_b = { "branch" },
 		lualine_c = { diagnostics },
 		lualine_x = { diff },
-		lualine_y = { filetype },
-		lualine_z = { location, "progress" },
+		lualine_y = { filetype, location },
+		lualine_z = { "progress" },
 	},
 })
