@@ -32,9 +32,9 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 keymap("n", "b", "n", opts)
 
 
--- -- Change key map for mark
--- keymap("n", "`", "m", opts)
--- keymap("n", "~", "'", opts)
+-- Change key map for mark
+keymap("n", "`", "m", opts)
+keymap("n", "~", "'", opts)
 
 
 -- Move to START and END of LINE
@@ -82,12 +82,15 @@ keymap("n", "<C-s>", "<cmd>wa!<CR>", opts)
                                                            -- Append "/./" to this path string. Then take the path
                                                            -- again, remove the directories part and the file
                                                          --|| extention and then apend it to the path string. 
-keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc % -o %:r && %:p:h/./%:t:r"<CR>', opts)
+keymap("n", "<A-;>", ':w!<CR>:TermExec cmd="gcc % -o %:r && %:p:h/./%:t:r"<CR>', opts)
 
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
 
+
+-- Macros
+keymap("n", "<S-q>", "q", opts)
 
 -- Insert --
 -- Press jk fast to escape
