@@ -28,6 +28,11 @@ keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
 
+-- Move like sonic
+keymap("n", "<A-j>", "5j", opts)
+keymap("n", "<A-k>", "5k", opts)
+
+
 -- Change key map for cycling search term
 keymap("n", "b", "n", opts)
 
@@ -98,6 +103,13 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
 
+-- Better navigation in insert mode
+keymap("i", "<A-h>", "<Left>", opts)
+keymap("i", "<A-j>", "<Down>", opts)
+keymap("i", "<A-k>", "<Up>", opts)
+keymap("i", "<A-l>", "<Right>", opts)
+
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
@@ -113,6 +125,24 @@ keymap("v", "<S-m>", "<S-g>", opts)
 
 -- Select EveryThing in visual_mode
 keymap("v", "<C-A>", "<ESC>ggVG", opts)   -- does'nt work
+
+
+-- TERMINAL MODE
+
+-- Better navigation in term mode
+keymap("t", "<A-h>", "<Left>", opts)
+keymap("t", "<A-j>", "<Down>", opts)
+keymap("t", "<A-k>", "<Up>", opts)
+keymap("t", "<A-l>", "<Right>", opts)
+
+-- COMMAND MODE
+
+-- Better navigation in insert mode
+keymap("c", "<A-h>", "<Left>", opts)
+keymap("c", "<A-j>", "<Down>", opts)
+keymap("c", "<A-k>", "<Up>", opts)
+keymap("c", "<A-l>", "<Right>", opts)
+
 
 -- Plugins --
 
