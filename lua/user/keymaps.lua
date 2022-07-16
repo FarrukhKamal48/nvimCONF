@@ -33,6 +33,11 @@ keymap("n", "<A-j>", "5j", opts)
 keymap("n", "<A-k>", "5k", opts)
 
 
+-- Move cursor word by word
+keymap("n", "<A-h>", "b", opts)
+keymap("n", "<A-l>", "w", opts)
+
+
 -- Change key map for cycling search term
 keymap("n", "b", "n", opts)
 
