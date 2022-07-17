@@ -92,7 +92,7 @@ keymap("n", "<C-s>", "<cmd>wa!<CR>", opts)
                                                            -- Append "/./" to this path string. Then take the path
                                                            -- again, remove the directories part and the file
                                                          --|| extention and then apend it to the path string. 
-keymap("n", "<A-;>", ':w!<CR>:TermExec cmd="gcc % -o %:r && %:p:h/./%:t:r"<CR>', opts)
+keymap("n", "<A-;>", ':w!<CR>:TermExec cmd="gcc % -o %:r && %:p:h/./%:t:r"<CR>:ToggleTerm<CR>:ToggleTerm<CR>', opts)
 
 
 -- Better paste
@@ -120,16 +120,29 @@ keymap("i", "<A-l>", "<Right>", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
+
 -- Move to START and END of LINE
 keymap("v", "n", "0", opts)
 keymap("v", "m", "$", opts)
+
 
 -- Move to TOP and BOTTOM of FILE
 keymap("v", "<S-n>", "gg", opts)
 keymap("v", "<S-m>", "<S-g>", opts)
 
+
 -- Select EveryThing in visual_mode
 keymap("v", "<C-A>", "<ESC>ggVG", opts)   -- does'nt work
+
+
+-- Move like sonic
+keymap("v", "<A-j>", "5j", opts)
+keymap("v", "<A-k>", "5k", opts)
+
+
+-- Move cursor word by word
+keymap("v", "<A-h>", "b", opts)
+keymap("v", "<A-l>", "w", opts)
 
 
 -- TERMINAL MODE
@@ -142,7 +155,7 @@ keymap("t", "<A-l>", "<Right>", opts)
 
 -- COMMAND MODE
 
--- Better navigation in insert mode
+-- Better navigation in command mode
 keymap("c", "<A-h>", "<Left>", opts)
 keymap("c", "<A-j>", "<Down>", opts)
 keymap("c", "<A-k>", "<Up>", opts)
