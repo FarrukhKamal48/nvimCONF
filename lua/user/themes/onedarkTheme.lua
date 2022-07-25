@@ -25,6 +25,7 @@ require("onedark").setup({
 	-- Override default colors
 	colors = {
 		VSvariable = "#e55561",
+        black = "#156bdc", -- fixes the black color of the suggestions in toggleterm
 	},
 
 	-- Override highlight groups

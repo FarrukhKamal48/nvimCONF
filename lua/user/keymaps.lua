@@ -92,7 +92,7 @@ keymap("n", "<C-s>", "<cmd>wa!<CR>", opts)
                                                            -- Append "/./" to this path string. Then take the path
                                                            -- again, remove the directories part and the file
                                                          --|| extention and then apend it to the path string. 
-keymap("n", "<A-;>", ':w!<CR>:TermExec cmd="gcc % -o %:r && %:p:h/./%:t:r"<CR>:ToggleTerm<CR>:ToggleTerm<CR>', opts)
+keymap("n", "<A-;>", ':w!<CR>:TermExec cmd="clear ;gcc -lm % -o %:r && %:p:h/./%:t:r"<CR>:ToggleTerm<CR>:ToggleTerm<CR>', opts)
 
 
 -- Better paste
@@ -152,6 +152,7 @@ keymap("t", "<A-h>", "<Left>", opts)
 keymap("t", "<A-j>", "<Down>", opts)
 keymap("t", "<A-k>", "<Up>", opts)
 keymap("t", "<A-l>", "<Right>", opts)
+
 
 -- COMMAND MODE
 
