@@ -14,4 +14,7 @@ configs.setup({
 		enable = true,
 	},
 	indent = { enable = true, disable = { "python", "css" } },
+    playground = {
+        enable = true,
+    }
 })

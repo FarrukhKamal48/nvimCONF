@@ -114,6 +114,7 @@ keymap("i", "<A-j>", "<Down>", opts)
 keymap("i", "<A-k>", "<Up>", opts)
 keymap("i", "<A-l>", "<Right>", opts)
 
+keymap('i', "<A-;>", ";", opts)
 
 -- Visual --
 -- Stay in indent mode

@@ -94,14 +94,15 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		commit = "518e27589c0463af15463c9d675c65e464efc2fe",
 	})
+    use("nvim-treesitter/playground")
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
-	use("kdheepak/lazygit.nvim")
+	use({"kdheepak/lazygit.nvim", commit = "9c73fd69a4c1cb3b3fc35b741ac968e331642600"})
 
 	-- Unity intelisense
  --    use ("neoclide/coc.nvim")
-	-- use("OmniSharp/omnisharp-vim")
+	use("OmniSharp/omnisharp-vim")
     -- use("dense-analysis/ale")
 
 	-- DAP

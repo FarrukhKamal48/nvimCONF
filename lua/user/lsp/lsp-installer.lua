@@ -18,7 +18,7 @@ local servers = {
 	"taplo",
 	"tsserver",
 	-- "csharp_ls",
-	-- "omnisharp",
+	"omnisharp",
 }
 
 lsp_installer.setup()

@@ -25,12 +25,14 @@ require("onedark").setup({
 	-- Override default colors
 	colors = {
 		light_red = "#e55561",
+        type = "#efbd5d",
         black = "#156bdc", -- fixes the black color of the suggestions in toggleterm
 	},
 
 	-- Override highlight groups
 	highlights = {
 		TSVariable = { fg = "$light_red" },
+        TSType = {fg = "$type"},
 	},
 
 	-- Plugins Config --
