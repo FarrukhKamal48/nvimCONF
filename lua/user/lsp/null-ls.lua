@@ -13,7 +13,7 @@ null_ls.setup {
   debug = false,
   sources = {
     formatting.prettier.with {
-      extra_filetypes = { "toml" },
+      extra_filetypes = { "toml", "cs" },
       extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" },
     },
     formatting.black.with { extra_args = { "--fast" } },
