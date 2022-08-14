@@ -32,7 +32,7 @@ require("onedark").setup({
 	-- Override highlight groups
 	highlights = {
 		TSVariable = { fg = "$light_red" },
-        TSType = {fg = "$type"},
+        -- TSType = {fg = "$type"},
 	},
 
 	-- Plugins Config --
