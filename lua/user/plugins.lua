@@ -95,7 +95,7 @@ return packer.startup(function(use)
 		commit = "518e27589c0463af15463c9d675c65e464efc2fe",
 	})
     use("nvim-treesitter/playground")
-    use("p00f/nvim-ts-rainbow")
+    use({"p00f/nvim-ts-rainbow", commit = "1e904f6d1b41adb9d3b87df2108dc4a315a72379"})
 
 	-- Git
 	use({ "lewis6991/gitsigns.nvim", commit = "c18e016864c92ecf9775abea1baaa161c28082c3" })
@@ -103,8 +103,8 @@ return packer.startup(function(use)
 
 	-- Unity intelisense
  --    use ("neoclide/coc.nvim")
-	use("OmniSharp/omnisharp-vim")
-    -- use("dense-analysis/ale")
+	use({"OmniSharp/omnisharp-vim", commit = "7e88f137ad7b74b0beb7034e592bcd07922be5e8"})
+    use("dense-analysis/ale")
 
 	-- DAP
 	use({ "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" })

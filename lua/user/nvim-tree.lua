@@ -8,6 +8,11 @@ if not config_status_ok then
   return
 end
 
+local enable_diagnostic = true
+if vim.bo.filetype == "cs" then
+    enable_diagnostic = false
+end
+
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
@@ -44,7 +49,7 @@ nvim_tree.setup {
     },
   },
   diagnostics = {
-    enable = true,
+    enable = enable_diagnostic,
     show_on_dirs = true,
     icons = {
       hint = "",
@@ -54,7 +59,7 @@ nvim_tree.setup {
     },
   },
   view = {
-    width = 30,
+    width = 33,
     height = 30,
     side = "left",
     mappings = {
