@@ -25,11 +25,11 @@ require("onedark").setup({
 	-- Override default colors
 	colors = {
 		black = "#0c0e15",
-		bg0 = "#141b24",
+		bg0 = "#1a212e", -- swap with bg_d to switch background and forground
 		bg1 = "#21283b",
 		bg2 = "#283347",
 		bg3 = "#2a324a",
-		bg_d = "#1a212e",
+		bg_d = "#141b24",
 		bg_blue = "#54b0fd",
 		bg_yellow = "#f2cc81",
 		fg = "#93a4c3",

@@ -24,7 +24,7 @@ null_ls.setup({
 })
 
 -- ale linter
-vim.cmd("let g:ale_linters_explicit = 0")
+vim.cmd("let g:ale_linters_explicit = 0") -- set to 1 to only enable on specified files
 vim.cmd("let b:ale_linters = {'cs': ['OmniSharp']}")
 vim.cmd("let g:ale_sign_error = ' '")
 vim.cmd("let g:ale_sign_warning = ' '")

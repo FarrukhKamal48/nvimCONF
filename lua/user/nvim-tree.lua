@@ -9,7 +9,7 @@ if not config_status_ok then
 end
 
 local enable_diagnostic = true
-if vim.bo.filetype == "cs" then
+if vim.bo.filetype == "py" then
     enable_diagnostic = false
 end
 
