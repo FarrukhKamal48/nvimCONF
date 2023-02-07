@@ -105,7 +105,7 @@ return packer.startup(function(use)
 	-- Unity intelisense
  --    use ("neoclide/coc.nvim")
 	use({"OmniSharp/omnisharp-vim", commit = "7e88f137ad7b74b0beb7034e592bcd07922be5e8"})
-    use("dense-analysis/ale")
+    -- use("dense-analysis/ale")
 
 	-- DAP
 	use({ "mfussenegger/nvim-dap", commit = "014ebd53612cfd42ac8c131e6cec7c194572f21d" })
